@@ -1,0 +1,16 @@
+
+# Create requirements.txt if missing
+if [ ! -f "$REQ_FILE" ]; then
+    echo "[CREATE] requirements.txt"
+    cat <<EOF > "$REQ_FILE"
+simple-term-menu
+psutil
+requests
+prometheus-client
+rich
+EOF
+fi
+
+echo "[INSTALL] Installing Python requirements"
+python -m pip install -r "$REQ_FILE"
+

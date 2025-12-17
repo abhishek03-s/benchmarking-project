@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Add any large data folders here, e.g.:
+data/
+osu-micro-benchmarks-7.3.tar.gz
+osu-micro-benchmarks-7.3/
+rand_rw_test.0.0
+seq_rw_test.0.0
+testFile
