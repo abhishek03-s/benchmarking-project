@@ -1,0 +1,23 @@
+# HELP hpc_benchmark_sysbench_events Sysbench CPU events per second.
+# TYPE hpc_benchmark_sysbench_events gauge
+hpc_benchmark_sysbench_events 5777.24
+# HELP hpc_benchmark_stream_triad_bw_mbps STREAM Triad Memory Bandwidth in MiB/s.
+# TYPE hpc_benchmark_stream_triad_bw_mbps gauge
+hpc_benchmark_stream_triad_bw_mbps 25831.0
+# HELP hpc_benchmark_fio_read_iops FIO Random Read IOPS.
+# TYPE hpc_benchmark_fio_read_iops gauge
+hpc_benchmark_fio_read_iops 0
+# HELP hpc_benchmark_ior_write_mbps IOR Parallel File System Write BW in MiB/s.
+# TYPE hpc_benchmark_ior_write_mbps gauge
+hpc_benchmark_ior_write_mbps 0
+# HELP hpc_benchmark_ior_read_mbps IOR Parallel File System Read BW in MiB/s.
+# TYPE hpc_benchmark_ior_read_mbps gauge
+hpc_benchmark_ior_read_mbps 0
+# HELP hpc_benchmark_hpl_gflops HPL Linpack Gflops.
+# TYPE hpc_benchmark_hpl_gflops gauge
+hpc_benchmark_hpl_gflops Gflops
+# HELP hpc_benchmark_osu_latency_min_us OSU Minimum MPI Latency in microseconds.
+# TYPE hpc_benchmark_osu_latency_min_us gauge
+hpc_benchmark_osu_latency_min_us 0.17
+1.14
+

@@ -1,0 +1,8 @@
+rand_rw_test: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=16
+fio-3.36
+Starting 1 process
+rand_rw_test: Laying out IO file (1 file / 1024MiB)
+fio: ENOSPC on laying out file, stopping
+
+
+Run status group 0 (all jobs):

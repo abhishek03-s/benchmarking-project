@@ -1,0 +1,41 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Dec 17 02:44:27 2025
+Command line        : /home/acts/Desktop/Project_final/tools/ior/install/bin/ior -a POSIX -w -r -F -t 1m -b 100m -i 1 -o /home/acts/Desktop/Project_final/tools/ior_test_file.dat
+Machine             : Linux rahul
+TestID              : 0
+StartTime           : Wed Dec 17 02:44:27 2025
+Path                : /home/acts/Desktop/Project_final/tools/ior_test_file.dat.00000000
+FS                  : 95.5 GiB   Used FS: 66.1%   Inodes: 6.1 Mi   Used Inodes: 7.7%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /home/acts/Desktop/Project_final/tools/ior_test_file.dat
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 1
+tasks               : 4
+clients per node    : 4
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 1 MiB
+blocksize           : 100 MiB
+aggregate filesize  : 400 MiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     8085       8090       0.000427    102400     1024.00    0.000086   0.049441   0.018518   0.049474   0   
+read      26661      26681      0.000133    102400     1024.00    0.000007   0.014992   0.001719   0.015003   0   
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        8085.05    8085.05    8085.05       0.00    8085.05    8085.05    8085.05       0.00    0.04947         NA            NA     0      4   4    1   1     0        1         0    0      1 104857600  1048576     400.0 POSIX      0
+read        26661.39   26661.39   26661.39       0.00   26661.39   26661.39   26661.39       0.00    0.01500         NA            NA     0      4   4    1   1     0        1         0    0      1 104857600  1048576     400.0 POSIX      0
+Finished            : Wed Dec 17 02:44:27 2025
